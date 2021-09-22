@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/activity_main.xml" value="0.19114583333333332" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/fragment_auth.xml" value="0.2786458333333333" />
       </map>
     </option>
   </component>
@@ -12,5 +13,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2786458333333333" />
+      </ProjectState>
+    </option>
   </component>
 </project>
