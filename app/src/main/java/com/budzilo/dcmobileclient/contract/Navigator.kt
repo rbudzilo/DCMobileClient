@@ -1,4 +1,4 @@
-package com.budzilo.dcmobileclient
+package com.budzilo.dcmobileclient.contract
 
 import androidx.fragment.app.Fragment
 
