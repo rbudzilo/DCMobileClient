@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/drawable/chevron_down_disabled.xml" value="0.22135416666666666" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/fragment_menu.xml" value="0.36102564102564105" />
+        <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/fragment_register.xml" value="0.20520833333333333" />
         <entry key="..\:/Project/Android/DCMobileClient/app/src/main/res/layout/item_spinner.xml" value="0.17407407407407408" />
       </map>
     </option>

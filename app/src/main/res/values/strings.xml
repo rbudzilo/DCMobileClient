@@ -25,9 +25,8 @@
     <string name="done">Done</string>
     <string name="congratulations">Congratulations!</string>
     <string name="done_icon">Done icon</string>
-    <string name="register">REGISTER</string>
     <string name="login">LOGIN</string>
-    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="register">REGISTER</string>
 
     <plurals name="boxes">
         <item quantity="zero">%1$d boxes</item>

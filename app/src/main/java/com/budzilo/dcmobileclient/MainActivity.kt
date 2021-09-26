@@ -9,9 +9,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+// import androidx.fragment.app.FragmentResultListener
 import androidx.lifecycle.LifecycleOwner
 import com.budzilo.dcmobileclient.contract.*
 import com.budzilo.dcmobileclient.databinding.ActivityMainBinding
@@ -31,23 +31,17 @@ class MainActivity : AppCompatActivity(), Navigator {
         }
     }
 
-    override fun showLogin() {
-        TODO("Not yet implemented")
-    }
-
-    override fun showRegister() {
-        TODO("Not yet implemented")
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
+        binding = ActivityMainBinding.inflate(layoutInflater).also {
+            setContentView(it.root)
+        }
         setSupportActionBar(binding.toolbar)
 
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.fragmentContainer, MenuFragment())
+                .add(R.id.fragmentContainer, LoginFragment())
                 .commit()
         }
 
@@ -71,6 +65,16 @@ class MainActivity : AppCompatActivity(), Navigator {
         return true
     }
 
+    override fun goBack() {
+        onBackPressed()
+    }
+
+    override fun <T : Parcelable> listenResult(clazz: Class<T>, owner: LifecycleOwner, listener: ResultListener<T>) {
+        supportFragmentManager.setFragmentResultListener(clazz.name, owner, { _, bundle ->
+            listener.invoke(bundle.getParcelable(KEY_RESULT)!!)
+        })
+    }
+
     private fun launchFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
@@ -83,6 +87,14 @@ class MainActivity : AppCompatActivity(), Navigator {
             .addToBackStack(null)
             .replace(R.id.fragmentContainer, fragment)
             .commit()
+    }
+
+    override fun showRegisterFragment() {
+        launchFragment(RegisterFragment())
+    }
+
+    override fun showLoginFragment() {
+        launchFragment(LoginFragment())
     }
 
     private fun updateUi() {
