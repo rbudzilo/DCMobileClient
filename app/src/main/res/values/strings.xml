@@ -25,8 +25,12 @@
     <string name="done">Done</string>
     <string name="congratulations">Congratulations!</string>
     <string name="done_icon">Done icon</string>
-    <string name="login">LOGIN</string>
-    <string name="register">REGISTER</string>
+    <string name="login">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Email адрес</string>
+    <string name="password">Пароль</string>
+    <string name="demo">demo</string>
+    <string name="demo_server_ru">demo@server.ru</string>
 
     <plurals name="boxes">
         <item quantity="zero">%1$d boxes</item>
