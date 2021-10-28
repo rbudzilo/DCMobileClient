@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
@@ -20,10 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textSize="20sp"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:text="@string/demo_server_ru"
-        android:autofillHints="" />
+        android:textSize="20sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/textPassword"
@@ -39,11 +41,12 @@
         android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:text="@string/demo"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/loginButton"
